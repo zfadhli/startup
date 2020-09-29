@@ -1,10 +1,11 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: {
-    mode: 'all',
-    content: ['./src/**/*.{js,jsx}', './next.config.js'],
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
   },
+  purge: ['./**/*.{js,jsx}', './next.config.js'],
   theme: {
     extend: {
       spacing: {
@@ -72,6 +73,7 @@ module.exports = {
   plugins: [
     require('@tailwindcss/ui'),
     require('@tailwindcss/typography'),
+    require('@tailwindcss/custom-forms'),
     function ({ addBase, addComponents, theme }) {
       addBase([
         {
@@ -81,8 +83,7 @@ module.exports = {
             fontStyle: 'normal',
             fontNamedInstance: 'Regular',
             fontDisplay: 'swap',
-            src:
-              'url("/fonts/Inter-roman.var-latin.woff2?3.13") format("woff2")',
+            src: 'url("/fonts/Inter-roman.var-latin.woff2?3.13") format("woff2")',
           },
         },
         {
@@ -92,8 +93,7 @@ module.exports = {
             fontStyle: 'italic',
             fontNamedInstance: 'Italic',
             fontDisplay: 'swap',
-            src:
-              'url("/fonts/Inter-italic.var-latin.woff2?3.13") format("woff2")',
+            src: 'url("/fonts/Inter-italic.var-latin.woff2?3.13") format("woff2")',
           },
         },
       ])

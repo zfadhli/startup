@@ -1,65 +1,30 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+    <div className="container mx-auto text-lg">
+      <h2>Tailwindcss</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ut saepe, quidem quia
+        reiciendis eveniet recusandae fuga pariatur quaerat sit, culpa vitae aliquam praesentium
+        doloremque aspernatur eum velit illo tempore.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea perspiciatis, minima
+        corporis ad rem perferendis cupiditate eos possimus voluptatibus qui recusandae explicabo
+        facere provident necessitatibus nisi labore. Repellendus itaque architecto laborum
+        perferendis porro magni dicta tenetur! Eaque cum libero quod, odit voluptatibus perferendis
+        asperiores eum eius, iusto recusandae neque illo, eveniet nam illum dicta doloribus
+        molestias enim incidunt quaerat fugit maxime eos iure? Minus, est eligendi. Sunt laborum
+        vero quisquam quas dicta eaque nam, dolores explicabo enim reiciendis voluptates voluptate
+        quis, possimus, repudiandae rem. Natus atque quae, suscipit aliquid necessitatibus beatae
+        mollitia deleniti quam sunt totam repellat laboriosam iure?
+      </p>
+      <div>
+        <button className="px-4 py-2 bg-blue-500 text-white rounded shadow text-sm font-bold">
+          Send
+        </button>
+      </div>
     </div>
   )
 }
