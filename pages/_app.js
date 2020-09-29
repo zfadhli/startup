@@ -1,10 +1,12 @@
-import '@/assets/tailwind.css'
+import '@/styles/tailwind.css'
 import Head from 'next/head'
+import { Html } from 'next/document'
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className="antialiased">
+    <div className="antialiased leading-tight text-gray-900">
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="preload"
@@ -14,7 +16,9 @@ export default function App({ Component, pageProps }) {
           crossOrigin="true"
         />
       </Head>
-      <Component {...pageProps} />
+      <div className="min-h-screen bg-gray-100">
+        <Component {...pageProps} />
+      </div>
     </div>
   )
 }
