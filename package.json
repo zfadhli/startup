@@ -13,7 +13,12 @@
     "@tailwindcss/ui": "^0.6.2",
     "@zeit/next-css": "^1.0.1",
     "autoprefixer": "^9.8.6",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0",
     "next": "9.5.3",
+    "next-compose-plugins": "^2.2.0",
+    "next-optimized-images": "^2.6.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "tailwindcss": "^1.8.10"
