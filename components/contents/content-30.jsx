@@ -11,28 +11,28 @@ export default function content() {
         </div>
         <div className="max-w-4xl mx-auto mt-16">
           <div className="grid grid-cols-4 grid-rows-2 gap-8">
-            <div className="flex items-center justify-center p-8 bg-gray-200 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center p-8 bg-gray-100 rounded-lg shadow-lg">
               <img src={require('@/assets/client-13.png')} alt="" />
             </div>
-            <div className="flex items-center justify-center p-8 bg-gray-200 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center p-8 bg-gray-100 rounded-lg shadow-lg">
               <img src={require('@/assets/client-14.png')} alt="" />
             </div>
-            <div className="flex items-center justify-center p-8 bg-gray-200 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center p-8 bg-gray-100 rounded-lg shadow-lg">
               <img src={require('@/assets/client-15.png')} alt="" />
             </div>
-            <div className="flex items-center justify-center p-8 bg-gray-200 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center p-8 bg-gray-100 rounded-lg shadow-lg">
               <img src={require('@/assets/client-16.png')} alt="" />
             </div>
-            <div className="flex items-center justify-center p-8 bg-gray-200 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center p-8 bg-gray-100 rounded-lg shadow-lg">
               <img src={require('@/assets/client-17.png')} alt="" />
             </div>
-            <div className="flex items-center justify-center p-8 bg-gray-200 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center p-8 bg-gray-100 rounded-lg shadow-lg">
               <img src={require('@/assets/client-18.png')} alt="" />
             </div>
-            <div className="flex items-center justify-center p-8 bg-gray-200 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center p-8 bg-gray-100 rounded-lg shadow-lg">
               <img src={require('@/assets/client-19.png')} alt="" />
             </div>
-            <div className="flex items-center justify-center p-8 bg-gray-200 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center p-8 bg-gray-100 rounded-lg shadow-lg">
               <img src={require('@/assets/client-20.png')} alt="" />
             </div>
           </div>
