@@ -103,6 +103,12 @@ export default function Home() {
 
         <h2 className="pt-20 pb-4 font-bold text-center uppercase">Content 32</h2>
         <Content.thirtytwo />
+
+        <h2 className="pt-20 pb-4 font-bold text-center uppercase">Content 33</h2>
+        <Content.thirtythree />
+
+        <h2 className="pt-20 pb-4 font-bold text-center uppercase">Content 34</h2>
+        <Content.thirtyfour />
       </div>
     </>
   )
