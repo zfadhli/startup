@@ -6,9 +6,9 @@ export default function content() {
           <img
             src={require('@/assets/bg-03.jpg')}
             alt="bg image"
-            className="object-none"
+            className="object-none w-full h-full"
             style={{
-              objectPosition: '50% 100%',
+              objectPosition: '50% 150%',
             }}
           />
         </div>

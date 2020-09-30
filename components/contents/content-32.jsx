@@ -1,60 +1,45 @@
+const amounts = [
+  { credit: 10000, price: 0.02, prepay: 200 },
+  { credit: 20000, price: 0.01, prepay: 250 },
+  { credit: 50000, price: 0.01, prepay: 500 },
+  { credit: 75000, price: 0.01, prepay: 250 },
+  { credit: 200000, price: 0.05, prepay: 500 },
+]
+
 export default function content() {
   return (
     <>
       <div className="py-20 bg-white">
-        <div className="max-w-2xl mx-auto space-y-8 text-center">
-          <div className="flex items-center justify-center space-x-16">
-            <div className="w-12 h-12">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                />
-              </svg>
-            </div>
-            <div className="w-12 h-12 text-red-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                />
-              </svg>
-            </div>
-            <div className="w-12 h-12">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
-                />
-              </svg>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold">Pay as you go</h2>
+          <div className="grid grid-cols-3 gap-16 mt-8">
+            <table className="w-full col-span-2 table-fixed">
+              <thead className="text-left border-b-2">
+                <th className="py-2 text-sm font-bold text-gray-500 uppercase">Email Credit</th>
+                <th className="py-2 text-sm font-bold text-gray-500 uppercase">Price per Email</th>
+                <th className="py-2 text-sm font-bold text-gray-500 uppercase">Prepay Amount</th>
+              </thead>
+              <tbody>
+                {amounts.map((amount) => (
+                  <tr className="text-left border-b-2 border-gray-100" key={amount.credit}>
+                    <th className="px-4 py-4 font-normal">{amount.credit}</th>
+                    <th className="px-4 py-4 font-normal">{amount.price}</th>
+                    <th className="px-4 py-4 font-normal">${amount.prepay}</th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <div className="p-8 bg-gray-100 rounded-lg shadow">
+              <h3 className="font-bold">Easy Start</h3>
+              <p className="mt-4 text-gray-500">
+                To get started, you select the desired sample and base the entire website on it.
+                It’s that simple!
+              </p>
+              <button className="px-6 py-3 mt-8 text-sm font-bold text-white bg-green-400 rounded-full shadow">
+                Learn More
+              </button>
             </div>
           </div>
-          <h2 className="text-4xl font-bold">Better Landing for Your Startup</h2>
-          <p className="text-gray-500">
-            We have created a new product that will help designers, developers and companies create
-            websites for their startups quickly and easily.
-          </p>
         </div>
       </div>
     </>

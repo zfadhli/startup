@@ -30,6 +30,8 @@ import content29 from './content-29'
 import content30 from './content-30'
 import content31 from './content-31'
 import content32 from './content-32'
+import content33 from './content-33'
+import content34 from './content-34'
 
 export default {
   one: content1,
@@ -64,4 +66,6 @@ export default {
   thirty: content30,
   thirtyone: content31,
   thirtytwo: content32,
+  thirtythree: content33,
+  thirtyfour: content34,
 }

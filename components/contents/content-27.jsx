@@ -1,60 +1,78 @@
+import bgImage from '@/assets/bg-02.jpg'
+
+const Icon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+  </svg>
+)
+
 export default function content() {
   return (
     <>
-      <div className="py-20 bg-white">
-        <div className="max-w-2xl mx-auto space-y-8 text-center">
-          <div className="flex items-center justify-center space-x-16">
-            <div className="w-12 h-12">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                />
-              </svg>
-            </div>
-            <div className="w-12 h-12 text-red-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                />
-              </svg>
-            </div>
-            <div className="w-12 h-12">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
-                />
-              </svg>
+      <div className="py-20 bg-indigo-700">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-white">
+            We’ve created the product that will <br /> help your startup look better
+          </h2>
+          <div
+            className="relative w-full mt-8 bg-indigo-400 rounded-lg shadow-lg h-96"
+            style={{
+              backgroundImage: `url(${bgImage})`,
+              backgroundRepeat: 'no-repat',
+              backgroundSize: 'cover',
+              backgroundBlendMode: 'multiply',
+            }}
+          >
+            <div className="flex items-center justify-center w-full h-full">
+              <div className="w-16 h-16 text-white">
+                <Icon />
+              </div>
             </div>
           </div>
-          <h2 className="text-4xl font-bold">Better Landing for Your Startup</h2>
-          <p className="text-gray-500">
-            We have created a new product that will help designers, developers and companies create
-            websites for their startups quickly and easily.
-          </p>
+        </div>
+        <div className="grid max-w-4xl grid-cols-2 gap-16 mx-auto mt-16">
+          <div className="grid grid-cols-2 gap-8">
+            <div>
+              <img
+                src={require('@/assets/bg-04.jpg')}
+                alt="bg image"
+                className="object-cover object-center rounded-lg shadow-lg"
+              />
+            </div>
+            <div>
+              <h3 className="text-sm font-bold text-white uppercase">Feel Our Design</h3>
+              <p className="mt-4 text-gray-200">
+                Startup Design Framework contains components which can easily be integrated into
+                almost any design.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-8">
+            <div>
+              <img
+                src={require('@/assets/bg-04.jpg')}
+                alt="bg image"
+                className="object-cover object-center rounded-lg shadow-lg"
+              />
+            </div>
+            <div>
+              <h3 className="text-sm font-bold text-white uppercase">High Resolution</h3>
+              <p className="mt-4 text-gray-200">
+                We did a 2.5K size high resolution photo that will suit even for a very web site.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>
