@@ -7,7 +7,7 @@ export default function content() {
             <img
               src={require('@/assets/bg-02.jpg')}
               alt="bg image"
-              className="object-cover object-center"
+              className="object-cover object-center w-full h-full"
             />
           </div>
           <div className="flex justify-end mt-4">
